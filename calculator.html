@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frmcal">	
+        <center>
+       <h1>CALCULATOR</h1>
+       <table border="0"  >
+         <tr><input type="text" name="txt1" id="txt1" value="" readonly></tr>
+         <tr>
+            <td><input type="button" name="one"   value="1"  OnClick="equation(this.value);"></td>
+            <td><input type="button" name="two"   value="2" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="three" value="3" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="plus"  value="+" OnClick="equation(this.value);"></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="four"  value="4" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="five"  value="5" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="six"   value="6" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="subs"  value="- " OnClick="equation(this.value);"></td>
+         </tr>	
+         <tr>
+            <td><input type="button" name="seven" value="7" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="eigth" value="8" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="nine"  value="9" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="mult"  value="* " OnClick="equation(this.value);"></td>
+         </tr>	
+         <tr>
+            <td><input type="button" name="clear" value="C" OnClick="clearC(this.value);"></td>
+            <td><input type="button" name="zero" value="0" OnClick="equation(this.value);"></td>
+            <td><input type="button" name="equal"  value="=" OnClick="calculation(this.value);" ></td>
+            <td><input type="button" name="div"  value="/ " OnClick="equation(this.value);"></td>
+         </tr>
+       </table>
+        </center>
+      </form>
+      <script src="js/calculator.js"></script>
+</body>
+</html>
